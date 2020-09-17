@@ -1,0 +1,1 @@
+ffmpeg -y -f rawvideo -vcodec rawvideo -pix_fmt bgr24 -s 100x100 -r 11 -i - -c:v libx264 -pix_fmt yuv420p -preset ultrafast -f flv rtmp://192.168.0.118:1935/live/1
